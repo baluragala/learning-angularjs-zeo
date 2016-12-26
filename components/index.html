@@ -1,0 +1,11 @@
+<html ng-app="comp">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="helloComponent.js"></script>
+</head>
+<body ng-controller="helloController as hc">
+  {{hc.name}}
+  <hello-component username="hc.name"></hello-component>
+ </body>
+</html>

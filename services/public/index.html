@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="uiRouteExample">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+    <script src="UIRouteApp.js"></script>
+  </head>
+  <body>
+    <div>
+      <a ui-sref="home-page">Home</a>
+      <a ui-sref="about">About</a>
+      <ui-view>
+        YOUR VIEWS COME HERE
+      </ui-view>
+    </div>
+  </body>
+</html>

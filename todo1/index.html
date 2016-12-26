@@ -1,0 +1,17 @@
+<html ng-app="todo" ng-controller="greetController as g">
+<head>
+  <script src="angular.min.js"></script>
+  <script src="js/todo.js"></script>
+</head>
+<body >
+  <div ng-controller="todoController as tl">
+  <ul>
+      <li ng-repeat="todo in tl.todos">
+        {{g.greet}} - {{todo.task}} - {{ $odd }}
+      </li>
+  </ul>
+  <input type="text" ng-model="tl.newTask" />
+  <button ng-click="tl.addTodo()"/>Add</button>
+</div>
+ </body>
+</html>
